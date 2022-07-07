@@ -1,0 +1,10 @@
+src/
+node_modules/
+.rollup.cache/
+.idea
+
+.gitignore
+.prettierrc.json
+rollup.config.js
+tsconfig.json
+jest.config.js

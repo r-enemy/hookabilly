@@ -1,14 +1,14 @@
 {
-  "name": "hookabilly",
+  "name": "@razev/hookabilly",
   "version": "0.1.0",
   "description": "Useful hooks for myself",
-  "main": "index.ts",
   "author": "Renan Azevedo",
   "license": "MIT",
   "private": false,
   "scripts": {
     "build": "yarn rollup -c rollup.config.js",
-    "test": "yarn jest"
+    "test": "yarn jest",
+    "test:all": "yarn jest --watchAll"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.3",
@@ -16,20 +16,20 @@
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
     "jsdom": "^20.0.0",
+    "react": "^17.0.2",
     "prettier": "^2.7.1",
-    "react": "^18.2.0",
-    "react-test-renderer": "^18.2.0",
+    "react-test-renderer": "^17.0.2",
     "rollup": "^2.75.7",
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.1",
     "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/react": "^17.0.47"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^16.9.0 || ^17.0.0"
   },
-  "dependencies": {
-    "@testing-library/react-hooks": "^8.0.1",
-    "@types/react": "^18.0.14"
-  }
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js"
 }
